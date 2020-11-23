@@ -56,6 +56,6 @@ public class BlogServlet extends HttpServlet {
         String string = JSON.toJSONString(one);
         PrintWriter printWriter = resp.getWriter();
         printWriter.write(string);
-        System.out.println("master");
+        System.out.println("dev分支");
     }
 }

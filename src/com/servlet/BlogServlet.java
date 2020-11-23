@@ -56,6 +56,6 @@ public class BlogServlet extends HttpServlet {
         String string = JSON.toJSONString(one);
         PrintWriter printWriter = resp.getWriter();
         printWriter.write(string);
-        System.out.println("我是dev");
+        System.out.println("dev1的版本更新1.0");
     }
 }

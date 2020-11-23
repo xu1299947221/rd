@@ -56,6 +56,6 @@ public class BlogServlet extends HttpServlet {
         String string = JSON.toJSONString(one);
         PrintWriter printWriter = resp.getWriter();
         printWriter.write(string);
-        System.out.println("dev分支");
+        System.out.println("现在是dev分支时的修改");
     }
 }

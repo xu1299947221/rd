@@ -1,0 +1,176 @@
+.middle-top-back {
+    background: url(../images/proflie/czh_back.png) no-repeat center;
+    cursor: pointer;
+    background-size: 50% 50%;
+    display: inline-block;
+    height: 54px;
+    width: 54px;
+    vertical-align: middle;
+}
+
+.middle-top-text {
+    display: inline-block;
+    height: 44px;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+.middle-top-proflie {
+    height: 300px;
+    position: relative;
+}
+
+.proflie-img {
+    height: 120px;
+    background-color: pink;
+}
+
+.album_content {
+    padding: 30px 10px 0px 10px;
+    text-align: center;
+}
+
+.album_content img {
+    width: 60%;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+
+.album_content img:nth-child(1) {
+    box-shadow: 15px 15px 10px #ccc;
+}
+
+.album_content img:nth-child(1):hover {
+    /* animation: animate 2s linear infinite */
+    /* transform: rotateZ(20deg);
+    transform: rotateX(20deg); */
+    transform: rotate3d(230, -343, 30, 20deg)
+}
+
+.albums_mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 999;
+}
+
+.pc-slide {
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.view .swiper-container {
+    width: 900px;
+    height: 600px;
+}
+
+.view .swiper-container img {
+    width: 100%;
+}
+
+.view .arrow-left {
+    background: url(../images/album/上一页.png) no-repeat left top;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.2s;
+}
+
+.view .arrow-left:hover,
+.view .arrow-right:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.view .arrow-right {
+    background: url(../images/album/下一页.png) no-repeat left bottom no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.arrow-close {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    margin-top: -25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.preview {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.preview .swiper-container {
+    width: 900px;
+    height: 82px;
+    margin-left: 35px;
+}
+
+.swiper-container img {
+    width: 100%;
+}
+
+.preview .swiper-slide {
+    width: 128px;
+    height: 82px;
+}
+
+.preview .slide6 {
+    width: 128px;
+    width: 82px;
+}
+
+.preview .arrow-left {
+    background: url(../images/album/上一页.png) no-repeat left top;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -9px;
+    width: 9px;
+    height: 18px;
+    z-index: 10;
+}
+
+.preview .arrow-right {
+    background: url(../images/album/下一页.png) no-repeat left bottom;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -9px;
+    width: 9px;
+    height: 18px;
+    z-index: 10;
+}
+
+.preview img {
+    padding: 1px;
+}
+
+.preview .active-nav img {
+    padding: 0;
+    border: 1px solid #fff;
+}

@@ -1,0 +1,252 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    /* background: url("../images/reg/bg.png") no-repeat;
+    background-size: 100% 100%; */
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+.content_right {
+    position: relative;
+    flex: 1;
+    background: url(../images/reg/bg_right.png);
+    background-size: 100% 100%;
+}
+
+.content_left {
+    background: url(../images/reg/bg_left.png);
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 999;
+    flex: 1;
+}
+
+.left,
+.right {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.CZH {
+    margin-top: -10px;
+    color: white;
+}
+
+.CZH p {
+    margin-top: 50px;
+}
+
+.register,
+.logon {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.logon input,
+.register input {
+    background: white;
+    border-radius: 30px;
+    width: 420px;
+    height: 50px;
+    outline: none;
+    font-size: 18px;
+    color: rgba(29, 161, 242, 1.00);
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    background-color: rgba(29, 161, 242, 1.00);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 0.5s linear infinite;
+    z-index: 999;
+}
+
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+        /* opacity: 0.7; */
+    }
+    100% {
+        width: 1000px;
+        height: 1000px;
+        opacity: 0;
+    }
+}
+
+.logon input:hover,
+.register input:hover {
+    /* color: white; */
+    /* background-color: rgba(29, 161, 242, 1.00); */
+    transition: all 0.5s;
+}
+
+.mid {
+    display: none;
+    width: 560px;
+    height: 700px;
+    position: fixed;
+    border: #ebebeb solid 1px;
+    left: 50%;
+    top: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    background: rgba(21, 31, 41);
+    border: none;
+}
+
+.mid-logo img {
+    height: 40px;
+    width: 40px;
+    margin-left: 240px;
+}
+
+.guide {
+    color: white;
+    font-size: 25px;
+    font-family: 黑体;
+    margin-left: 20px;
+}
+
+.name,
+.mail,
+.password {
+    margin-left: 20px;
+    height: 60px;
+    width: 490px;
+    padding: 5px 10px;
+    background: rgba(24, 38, 51);
+    margin-bottom: 20px;
+}
+
+.name label,
+.password label,
+.mail label {
+    margin-left: 2px;
+    color: rgb(131, 146, 159);
+}
+
+.name input,
+.password input,
+.mail input {
+    width: 496px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+    outline: none;
+    background: rgba(24, 38, 51);
+    border-bottom: 2px solid rgb(131, 146, 159);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.name input:focus,
+.password input:focus,
+.mail input:focus {
+    border-bottom: 2px solid rgb(29, 161, 242);
+}
+
+.born {
+    margin-left: 20px;
+    margin-top: 70px;
+}
+
+.born p {
+    margin: 0px 0px 0px 12px;
+    color: #fff;
+}
+
+.born label {
+    display: block;
+    margin-left: 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(134, 151, 164);
+}
+
+.born select {
+    width: 150px;
+    height: 50px;
+    margin-left: 12px;
+    border: none;
+    background-color: rgba(24, 38, 51);
+    border-bottom: 1px solid rgb(131, 146, 159);
+    outline: none;
+    font-size: 14px;
+    color: rgb(131, 146, 159);
+}
+
+.finish {
+    margin: 20px 1px 1px 450px;
+}
+
+.finish input {
+    border-radius: 15px;
+    background: rgb(29, 161, 242);
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.login-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .3);
+}
+
+#checkPassword,
+#checkUser,
+#checkMail {
+    margin-left: 5px;
+    font-size: 10px;
+    color: red;
+}
+
+.password img {
+    width: 24px;
+    position: absolute;
+    margin: -30px 1px 1px 465px;
+    cursor: pointer;
+}
+
+.change {
+    position: absolute;
+    cursor: pointer;
+    color: rgb(62, 152, 214);
+}
+
+.login {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(26, 45, 64);
+    transition: 1s;
+}

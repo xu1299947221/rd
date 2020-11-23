@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: visible;
+    height: 100%;
+}
+
+.bgimg {
+    /* background-color: #000; */
+    background-image: url(../images/bgimg/.png) no-repeat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+}
+
+.bggif {
+    background: url(../images/bgimg/粉色_01.gif);
+    background-size: 100% 100%;
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+a {
+    color: #000;
+}
+
+.Margin {
+    height: 10px;
+    background-color: rgb(230, 236, 240);
+}
+
+
+/* 中间主体 */
+
+.middle-main {
+    width: 600px;
+    min-height: 1200px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-left: 1px solid #e6ecf0;
+    border-right: 1px solid #e6ecf0;
+    position: relative;
+    z-index: 1;
+}
+
+.middle-top {
+    width: 100%;
+    height: 53px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e6ecf0;
+    z-index: 3;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+
+/* `````````````````````````````````````````````````````````````````````````````````````````````````````````````````*/
+
+
+/* 发布的内容 */
+
+.Tutter {
+    /* border-top: 1px solid #e6ecf0; */
+    border-bottom: 1px solid #e6ecf0;
+    padding: 5px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Tutter_main {
+    display: flex;
+    margin-top: 10px;
+}
+
+.Tutter_main_Avatar {
+    margin-right: 20px;
+}
+
+.userName {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.Tutter_main_Avatar img {
+    width: 50px;
+    border-radius: 25px;
+}
+
+.Tutter_main_content .Media {
+    width: 495px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px 0px;
+}
+
+.Tutter_main_content .Media img {
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+}
+
+.controls_icon {
+    flex: 1;
+}
+
+.controls_icon .controls_icon_hover {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    /* background-color: #1da1f2; */
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+}
+
+.controls_icon img {
+    width: 19px;
+    vertical-align: middle;
+}
+
+
+/* `````````````````````````````````````````````````````````````````````````````````````````````````````````````````*/
+
+
+/* 左边主体 */
+
+.left {
+    width: 255px;
+    min-height: 560px;
+    /* background-color: #fff; */
+    position: fixed;
+    top: 0;
+    right: 50%;
+    transform: translateX(-301px);
+    z-index: 1;
+    padding: 10px;
+}
+
+.logo-left img {
+    border-radius: 25px;
+}
+
+.logo-left img:hover {
+    background-color: rgba(163, 163, 163, 0.212);
+}
+
+.left-second {
+    width: 255px;
+    height: 500px;
+    /* background-color: #fff; */
+    flex-direction: column;
+}
+
+.left-second a {
+    font-size: 19px;
+    font-weight: 700;
+    margin-top: 13px;
+    display: inline-block;
+    width: 255px;
+    height: 45px;
+    /* background-color: #fff; */
+}
+
+.left-second a .nav {
+    height: 100%;
+    display: inline-block;
+    /* background-color: #fff; */
+    color: #000;
+    padding: 0 20px;
+    border-radius: 22.5px;
+    transition: 0.2s;
+}
+
+
+/* .left-second a:hover .nav {
+    background-color: blue;
+} */
+
+.left-second a .nav img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.left-second a .nav span {
+    vertical-align: middle;
+    line-height: 45px;
+}
+
+.left-down {
+    width: 255px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #1da1f2;
+    border-radius: 26px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* 右侧边栏 */
+
+.right {
+    width: 360px;
+    min-height: 500px;
+    /* background-color: black; */
+    position: fixed;
+    top: 0;
+    right: 50%;
+    z-index: 3;
+    transform: translateX(701px);
+    padding: 10px 20px;
+}
+
+
+/* 搜索栏 */
+
+.search {
+    width: 100%;
+    height: 42px;
+    background-color: #e6ecf0;
+    border-radius: 21px;
+    line-height: 42px;
+    margin-bottom: 30px;
+}
+
+.search img {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.search input {
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+
+/* 推荐栏 */
+
+.trends {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 21px;
+    background-color: #f5f8fa;
+}
+
+.trends_tittle {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.trends_tittle h1 {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.trends_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.trends_main .trends_contents {
+    height: 65px;
+    /* background-color: khaki; */
+    border-bottom: 1px solid #e6ecf0;
+    position: relative;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.trends_contents:hover {
+    cursor: pointer;
+}
+
+.trends_contents .sort {
+    font-size: 13px;
+}
+
+.trends_contents .theme {
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.trends_down {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+
+.trends_down h1 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+
+/* 推荐关注 */
+
+.follow {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 200px;
+    background-color: #f5f8fa;
+    border-radius: 21px;
+}
+
+.follow_Main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow_Main .followUser {
+    display: flex;
+    width: 330px;
+    height: 65px;
+    border-bottom: 1px solid #e6ecf0;
+    position: relative;
+    padding: 10px 15px;
+}
+
+.follow_Avatar {
+    width: 75px;
+    /* background-color: rgb(167, 107, 107); */
+}
+
+.follow_Avatar img {
+    width: 65px;
+    line-height: 86px;
+    border-radius: 32.5px;
+}
+
+.follow_Main .user_Name {
+    width: 170px;
+    height: 100%;
+    /* background-color: rgb(116, 45, 45); */
+}
+
+.user_Name p {
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+.btn_follow {
+    width: 85px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin-top: 15px;
+    text-align: center;
+    border-color: #1da1f2;
+}
+
+.btn_follow span {
+    line-height: 30px;
+    font-weight: 700;
+}
+
+
+/* 左边点击出现发送tutter页面 */
+
+.shadow {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+    display: none;
+}
+
+.shadow .publish {
+    width: 650px;
+    min-height: 400px;
+    background-color: #000;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.publish .close_1 {
+    width: 100%;
+    height: 70px;
+    /* background-color: #1da1f2; */
+    position: relative;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.close_1 img {
+    width: 25px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    cursor: pointer;
+}
+
+.publish_down {
+    width: 100%;
+    min-height: 330px;
+    display: flex;
+}
+
+
+/* .publish_down_left {
+ 
+} */
+
+.publish_down_left img {
+    width: 60px;
+    border-radius: 30px;
+    margin: 20px 20px 0 15px;
+}
+
+.publish_down_right {
+    width: 100%;
+    min-height: 330px;
+}
+
+.publish_content {
+    width: 100%;
+    min-height: 240px;
+}
+
+.publish_content .publish_contents {
+    width: 100%;
+    min-height: 210px;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow-y: hidden;
+}
+
+.publish_icon {
+    width: 100%;
+    height: 86px;
+    display: flex;
+}
+
+.pbl_icons {
+    width: 60px;
+    height: 60px;
+    margin-top: 13px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.pbl_gegeda {
+    margin-top: 13px;
+    margin-left: 90px;
+    height: 40px;
+    padding: 10px 25px;
+    line-height: 40px;
+    border-radius: 40px;
+    background-color: #1da1f2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* 点击more出现更换主题页面 */
+
+.shadow_1 {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+    display: none;
+}
+
+.more {
+    width: 500px;
+    min-height: 180px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -70%);
+    padding: 20px 20px;
+    z-index: 4;
+}
+
+.more p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #657786;
+    margin-bottom: 10px;
+}
+
+.change_color {
+    width: 100%;
+    height: 100px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+    display: flex;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+.colors {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.color_1 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 440px;
+    background-color: #1da1f2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    /* line-height: 100px; */
+}
+
+.color_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 440px;
+    background-color: #f4878b;
+    cursor: pointer;
+    /* border: 5px solid #ccc; */
+}
+
+.change_bgc {
+    width: 100%;
+    height: 120px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+    display: flex;
+    line-height: 100px;
+}
+
+.bgc_flex {
+    flex: 1;
+    /* background-color: aquamarine; */
+    padding: 30px 10px;
+}
+
+.bgc_flex .bgc_all {
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    border-radius: 10px;
+    /* border: 2px solid #ccc; */
+    cursor: pointer;
+}
+
+.bgc_flex .bgc_1 {
+    background-color: #fff;
+}
+
+.bgc_flex .bgc_2 {
+    background-color: #294a6b;
+}
+
+.bgc_flex .bgc_3 {
+    background-color: #ffd4d4;
+}
+
+.bgc_flex .bgc_4 {
+    background-color: #000;
+}
+
+.btn_close {
+    width: 100px;
+    height: 40px;
+    background-color: #1da1f2;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    margin: 20px auto 0px auto;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+}
+
+.bgcPink {
+    background-color: rgb(255, 212, 212);
+}
+
+.bgcBlue {
+    background-color: rgb(41, 74, 107);
+}
+
+.bgcBlack {
+    background-color: #000;
+}
+
+.bgcWhite {
+    background-color: #fff;
+}

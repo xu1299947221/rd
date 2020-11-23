@@ -1,0 +1,169 @@
+/* .content {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    border: none;
+} */
+
+.logo_back {
+    color: #fff;
+    display: inline-block;
+    width: 50px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.alogo {
+    position: relative;
+}
+
+.img_logo {
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: middle;
+    transform: translate(-50%, -50%);
+}
+
+.alogo h3 {
+    color: white;
+    text-align: center;
+}
+
+.aname,
+.apassword {
+    margin: 0 auto;
+    height: 70px;
+    width: 490px;
+    padding: 5px 10px;
+    background: rgba(24, 38, 51);
+    margin-bottom: 20px;
+}
+
+.aname label,
+.apassword label {
+    margin-left: 2px;
+    color: rgb(131, 146, 159);
+}
+
+.aname input,
+.apassword input {
+    width: 480px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+    outline: none;
+    background: rgba(24, 38, 51);
+    border-bottom: 2px solid rgb(131, 146, 159);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.aname input:focus,
+.apassword input:focus {
+    border-bottom: 2px solid rgb(29, 161, 242);
+}
+
+.afinish {
+    text-align: center;
+}
+
+.afinish input {
+    background: rgb(29, 161, 242);
+    border-radius: 25px;
+    width: 500px;
+    height: 50px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.afinish input:hover {
+    color: rgb(29, 161, 242);
+    background: #fff;
+}
+
+.apassword img {
+    width: 24px;
+    position: absolute;
+    margin: 28px 1px 1px 410px;
+    cursor: pointer;
+}
+
+.afooter {
+    text-align: center;
+}
+
+.afooter label {
+    color: rgb(23, 109, 199);
+}
+
+.adanger {
+    display: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 15px;
+    padding: 4px 12px;
+    width: 300px;
+    border-radius: 30px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: myAlert 1.3s ease-in-out;
+    z-index: 99999;
+}
+
+@keyframes myAlert {
+    0% {
+        display: block;
+        top: -100px;
+    }
+    10% {
+        display: block;
+        top: 80px;
+    }
+    20% {
+        display: block;
+        top: 40px;
+    }
+    30% {
+        display: block;
+        top: 80px;
+    }
+    40% {
+        display: block;
+        top: 60px;
+    }
+    50% {
+        top: 80px;
+    }
+    60% {
+        top: 80px;
+    }
+    70% {
+        top: 80px;
+    }
+    80% {
+        top: 80px;
+    }
+    90% {
+        top: 80px;
+    }
+    100% {
+        top: 80px;
+    }
+}

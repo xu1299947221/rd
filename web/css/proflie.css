@@ -1,0 +1,107 @@
+.middle-top-back {
+    background: url(../images/proflie/czh_back.png) no-repeat center;
+    cursor: pointer;
+    background-size: 50% 50%;
+    display: inline-block;
+    height: 54px;
+    width: 54px;
+    vertical-align: middle;
+}
+
+.middle-top-text {
+    display: inline-block;
+    height: 44px;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+.middle-top-proflie {
+    height: 300px;
+    position: relative;
+}
+
+.proflie-img {
+    height: 120px;
+    background-color: pink;
+}
+
+.tab_bar {
+    height: 40px;
+    display: flex;
+}
+
+.tab_bar_row {
+    flex: 1;
+    height: 40px;
+    color: #1da1f2;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: rgb(245, 248, 250)
+}
+
+.tab_bar_row:hover {
+    background-color: #e6ecf0;
+}
+
+.bder {
+    border-bottom: 2px solid #1da1f2;
+}
+
+.section {
+    display: none;
+}
+
+.proflie-img {
+    background: url(../images/proflie/czh_bg.jpg);
+    background-size: 100% 100%;
+}
+
+.czh {
+    height: 130px;
+    width: 130px;
+    background: url(../images/proflie/czh.jpg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    border: 4px solid #fff;
+}
+
+.czh_btn {
+    height: 40px;
+    width: 130px;
+    position: absolute;
+    right: 2%;
+    top: 45%;
+    border: 1px solid #1da1f2;
+    background-color: #fff;
+    color: #1da1f2;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.czh_btn:hover {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+.czh_text {
+    position: absolute;
+    top: 65%;
+    left: 3%;
+}
+
+.czh_text span {
+    font-size: 14px;
+    color: #666;
+}
+
+.czh_text strong {
+    font-size: 16px;
+    font-weight: 600;
+}
